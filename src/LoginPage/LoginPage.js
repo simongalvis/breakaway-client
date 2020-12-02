@@ -11,6 +11,7 @@ class LoginPage extends React.Component{
         return(
             <div className='LoginPage'>
                 <NavBar />
+                <div className='loginFormContainer'>
                 <h2 id='loginheading'>Log In</h2>
                 <form>
                     <input  type='text' id='loginusername' name='loginusername' placeholder='Username'/>
@@ -20,6 +21,8 @@ class LoginPage extends React.Component{
                     </Link>
                     
                 </form>
+                </div>
+                
                 
                 
             </div>

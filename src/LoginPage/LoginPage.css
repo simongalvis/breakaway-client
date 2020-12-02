@@ -1,12 +1,22 @@
-
-form{
+.LoginPage{
+    display: flex;
+    flex-direction:column;
+    background-color:rgb(41, 41, 41);
+}
+.loginFormContainer{
+    max-width: 550px;
+    align-self: center;
     
+}
+form{
+    align-self: center;
     padding: 16px 0;
     margin-right:0;
     text-align:0;
     display: block;
-    background-color:rgb(41, 41, 41);
     max-width:500px;
+    background-color:rgb(41, 41, 41);
+    
     
 }
 input{
@@ -22,7 +32,7 @@ input{
     color:white;
     background-color: black;
     margin:0;
-    padding: 24px 0;
+    padding: 24px 24px;
 }
 #loginbutton{
     width: 80%;
@@ -32,3 +42,9 @@ input{
     color:white;
     border: 1px solid rgb(41, 41, 41);
 }
+
+@media screen and (min-width: 500px){
+    .loginFormContainer{
+        width:454px;
+    }
+    }

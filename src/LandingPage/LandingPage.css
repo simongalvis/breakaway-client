@@ -1,5 +1,8 @@
 .LandingPage{
     margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;
 }
 .hero{
     font-size: 33px;
@@ -10,6 +13,7 @@
 #landingpage-ui-image{
     height:260px;
     width:244px;
+    align-self: center;
 }
 #landingpage-signup-button{
     margin: 24px 24px;
