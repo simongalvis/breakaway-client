@@ -1,0 +1,22 @@
+.LandingPage{
+    margin-bottom: 80px;
+}
+.hero{
+    font-size: 33px;
+    margin: 24px 0px; 
+    padding-left:16px;
+    padding-right:16px;
+}
+#landingpage-ui-image{
+    height:260px;
+    width:244px;
+}
+#landingpage-signup-button{
+    margin: 24px 24px;
+    width: 244px;
+    border-radius: 33px;
+    background-color: rgb(252, 76, 2);
+    color: white;
+    border: 1px solid white;
+
+}
