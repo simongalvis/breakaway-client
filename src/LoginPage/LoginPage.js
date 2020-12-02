@@ -1,7 +1,7 @@
 import React from 'react';
 import '../LoginPage/LoginPage.css';
 import NavBar from '../NavBar/NavBar.js';
-
+import Footer from '../Footer/Footer'
 
 
 
@@ -16,6 +16,7 @@ class LoginPage extends React.Component{
                     <input  type='text' id='loginpassword' name='loginpassword' placeholder='Password'/>
                     <button id='loginbutton'>Log In</button>
                 </form>
+                
                 
             </div>
             

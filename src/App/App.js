@@ -6,6 +6,7 @@ import NavBar from '../NavBar/NavBar'
 import LandingPage from '../LandingPage/LandingPage'
 import LoginPage from '../LoginPage/LoginPage'
 import SignupPage from '../SignupPage/SignupPage'
+import Footer from '../Footer/Footer'
 
 
 
@@ -43,6 +44,7 @@ class App extends React.Component {
       <main>
         {this.renderMainRoutes()}
       </main>
+      <Footer/>
       
     </div>
   );
