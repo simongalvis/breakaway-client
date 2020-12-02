@@ -9,7 +9,12 @@ class SignupPage extends React.Component{
         return(
             <div class='SignupPage'>
                 <NavBar/>
-                <h2>Content from Signup page</h2>
+                <h2 id='signupheading'>Become part of the Breakaway crew</h2>
+                <form>
+                    <input  type='text' id='signupusername' name='signupusername' placeholder='Username'/>
+                    <input  type='text' id='signuppassword' name='signuppassword' placeholder='Password'/>
+                    <button id='signupbutton'>Sign Up</button>
+                </form>
             </div>
             
         )
