@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import './LoginNavBar.css';
 import logo from '../images/breakaway-logo.png'
 
 
 
-class NavBar extends React.Component{
+class LoginNavBar extends React.Component{
 
 
 
@@ -15,8 +15,8 @@ class NavBar extends React.Component{
                 <Link to='/'>
                     <img src={logo} alt='Blue breakaway logo' id='main-logo'/>
                 </Link>
-                <Link to="/login-page">
-                    <button class='nav-button' id='login-button' value='login'>Log In</button>
+                <Link to="/signup-page">
+                    <button class='nav-button' id='signup-button' value='signup'>Sign Up</button>
                 </Link>
                 
                 
@@ -27,4 +27,4 @@ class NavBar extends React.Component{
 }
 
 
-export default NavBar;
+export default LoginNavBar;

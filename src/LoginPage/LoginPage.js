@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import '../LoginPage/LoginPage.css';
-import NavBar from '../NavBar/NavBar.js';
-import Footer from '../Footer/Footer'
+import LoginNavBar from '../LoginNavBar/LoginNavBar.js';
+
 
 
 
@@ -10,7 +10,7 @@ class LoginPage extends React.Component{
     render(){
         return(
             <div className='LoginPage'>
-                <NavBar />
+                <LoginNavBar />
                 <div className='loginFormContainer'>
                 <h2 id='loginheading'>Log In</h2>
                 <form>

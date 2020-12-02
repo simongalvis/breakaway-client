@@ -1,0 +1,39 @@
+
+h3{
+    float:left;
+
+}
+nav{
+   
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+    background-color:white;
+    padding: 0px 16px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    min-height: 55px;
+    
+}
+img {
+    height:40px;
+    width: 105px
+}
+button{
+    height:30px;
+    
+    border: 1px transparent solid;
+    border-color: rgb(231, 231, 231);
+    font-weight: 700;
+}
+#signup-button{
+    background-color:rgb(13, 146, 255);
+    color:white;
+    border-radius:4px;
+    padding: 1px 7px;
+    height:31px;
+    width:74px;
+}
