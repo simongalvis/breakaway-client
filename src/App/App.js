@@ -9,7 +9,7 @@ import SignupPage from '../SignupPage/SignupPage'
 import Footer from '../Footer/Footer'
 import ExpandedActivity from '../ExpandedActivity/ExpandedActivity'
 import Dashboard from '../Dashboard/Dashboard'
-
+import NewActivity from '../NewActivity/NewActivity'
 
 
 
@@ -32,6 +32,7 @@ class App extends React.Component {
     <Route exact path='/signup-page' component={SignupPage}/>
     <Route exact path='/login-page' component={LoginPage}/>
     <Route exact path='/activities' component={Dashboard}/>
+    <Route exact path='/new-activity' component={NewActivity}/>
     <Route exact path='/activities/:activityId' component={ExpandedActivity}/>
 
 </>

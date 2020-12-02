@@ -27,11 +27,11 @@ button{
     border-color: rgb(231, 231, 231);
     font-weight: 700;
 }
-#signup-button{
+#newactivity-breakaway-button{
     background-color:rgb(13, 146, 255);
     color:white;
     border-radius:4px;
     padding: 1px 7px;
     height:31px;
-    width:74px;
+    width:100px;
 }
