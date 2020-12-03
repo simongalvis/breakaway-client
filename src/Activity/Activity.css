@@ -1,0 +1,42 @@
+
+.Activity{
+    display:flex;
+    text-align: left;
+    justify-content: center;
+}
+.activityItem{
+    
+    
+    border: 1px solid rgb(231, 231, 231);
+    border-radius:7px;
+    max-width: 550px;
+    align-self: center; 
+    width:100%;
+    margin: 3px ;
+    
+    
+}
+ #user-name{
+    align-self: flex-start;
+    margin:1%;
+    width:100%;
+}
+#activity-title{
+    float: left;
+    width:100%;
+    margin:1%
+} 
+#stat-bar{
+    flex-direction: row;
+    display: inline-flex;
+    margin:1%;
+    width:100%;
+}
+p{
+    margin-right: 21px;
+}
+.stat-bar-div{
+    font-size:30px;
+    font-weight: lighter;
+    color: rgb(168, 168, 168);
+}

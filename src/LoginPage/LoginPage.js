@@ -6,6 +6,7 @@ import LoginNavBar from '../LoginNavBar/LoginNavBar.js';
 
 
 
+
 class LoginPage extends React.Component{
     render(){
         return(
