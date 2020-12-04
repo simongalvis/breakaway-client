@@ -18,10 +18,10 @@ header{
     min-height: 55px;
     
 }
-img {
+/* img {
     height:40px;
     width: 105px
-}
+} */
 button{
     height:30px;
     
@@ -35,4 +35,10 @@ button{
     padding: 1px 7px;
     height:31px;
     width:74px;
+}
+#main-logo{
+    height:24px;
+    width:177px;
+    margin:0;
+    padding:0;
 }
