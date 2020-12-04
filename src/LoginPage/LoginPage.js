@@ -23,7 +23,7 @@ class LoginPage extends React.Component{
                     
                 </form>
                 </div>
-                
+                 
                 
                 
             </div>

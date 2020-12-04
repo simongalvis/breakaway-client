@@ -1,4 +1,50 @@
 .AddActivity{
-    display: flex;
+    display:flex;
     flex-direction: column;
+    background-color:rgb(41, 41, 41);
+    min-height: 520px;
+}
+.signupFormContainer{
+    max-width: 550px;
+    align-self: center;
+}
+form{
+    align-self: center;
+    padding: 16px 0;
+    margin-right:0;
+    text-align:0;
+    display: block;
+    max-width:500px;
+    background-color: rgba(29, 29, 29, 0.5) ;
+    
+}
+input{
+    width:80%;
+    margin:3%;
+    border-radius: 7px;
+    border:solid 1px gray;
+    height:21px;
+    background-color:black;
+    max-width:700px;
+    color:white;
+}
+#signupheading{
+    color:white;
+    background-color: black;
+    margin:0;
+    padding: 24px 24px;
+}
+#activity-submit-button{
+    width: 80%;
+    margin-top:4%;
+    border-radius:33px;;
+    background-color:rgb(13, 146, 255);
+    color:white;
+    border: 1px solid rgb(41, 41, 41);
+}
+
+@media screen and (min-width: 500px){
+.signupFormContainer{
+    width:454px;
+}
 }
