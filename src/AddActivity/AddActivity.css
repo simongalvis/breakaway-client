@@ -1,0 +1,4 @@
+.AddActivity{
+    display: flex;
+    flex-direction: column;
+}
