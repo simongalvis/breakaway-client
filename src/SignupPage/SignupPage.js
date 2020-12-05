@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 
 
 
+
+
+
 class SignupPage extends React.Component{
+
+    
     render(){
         return(
             <div className='SignupPage'>
