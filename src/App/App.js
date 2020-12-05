@@ -48,8 +48,7 @@ class App extends React.Component {
   {"id":2,"fullname":"John Jenkins","username":"jjenk018","password":"oldmanjenkins","date_created":"2020-12-05T07:37:02.390Z"},
   {"id":3,"fullname":"Sara Jacobs","username":"sjaco902","password":"ilike2run","date_created":"2020-12-05T07:37:30.174Z"}
 ],
-loggedUser: {"id":1,"fullname":"Trent Richardson","username":"jappl018","password":"appleseedsrgreat","date_created":"2020-12-05T07:36:37.093Z"}
-  };
+loggedUser: {}};
 
   /* componentDidMount() {
     fetch(`https://limitless-earth-13782.herokuapp.com/api/activities`, {
@@ -66,6 +65,11 @@ loggedUser: {"id":1,"fullname":"Trent Richardson","username":"jappl018","passwor
    this.setState({
       activities: [...this.state.activities, activity]
 })
+ }
+ handleSetLoggedUser = (user) =>{
+    this.setState({
+      loggedUser: user
+    })
  }
   renderNavRoutes() {
     return (
@@ -97,7 +101,8 @@ loggedUser: {"id":1,"fullname":"Trent Richardson","username":"jappl018","passwor
       activities: this.state.activities,
       users: this.state.users,
       loggedUser: this.state.loggedUser,
-      addActivity: this.handleAddActivity
+      addActivity: this.handleAddActivity,
+      setLoggedUser: this.handleSetLoggedUser
     };
     return (
       <ApiContext.Provider value={value}>

@@ -26,6 +26,8 @@ static contextType = ApiContext;
             description: descriptionInput.value
         }
         this.context.addActivity(activity)
+
+        this.props.history.push('/activities')
     }
     
 
