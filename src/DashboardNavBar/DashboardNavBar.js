@@ -16,7 +16,7 @@ class DashboardNavBar extends React.Component{
                     <img src={logo} alt='Blue breakaway logo' id='main-logo'/>
                 </Link>
                 <Link to="/new-activity">
-                    <button class='nav-button' id='newactivity-breakaway-button' value='new activity'><b> +Breakaway!</b>  </button>
+                    <button className='nav-button' id='newactivity-breakaway-button' value='new activity'><b> +Breakaway!</b>  </button>
                 </Link>
                 
                 

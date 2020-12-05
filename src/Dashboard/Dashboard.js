@@ -4,11 +4,13 @@ import './Dashboard.css'
 import DashboardNavBar from '../DashboardNavBar/DashboardNavBar'
 import Activity from '../Activity/Activity'
 import {activityStore} from '../store'
+import ApiContext from '../ApiContext'
 
 
 
 class Dashboard extends React.Component{
 
+    static contextType = ApiContext
 
     render(){
         return(
@@ -16,7 +18,7 @@ class Dashboard extends React.Component{
                 <DashboardNavBar/>
                 <h2>Activities</h2>
 
-                {activityStore.map(activity => (
+                {this.context.activities.map(activity => (
                     <Activity name={activity.name}
                               title={activity.title}
                               duration={activity.duration} 

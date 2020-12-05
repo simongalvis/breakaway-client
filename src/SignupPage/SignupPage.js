@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 class SignupPage extends React.Component{
     render(){
         return(
-            <div class='SignupPage'>
+            <div className='SignupPage'>
                 <NavBar/>
                 <div className='signupFormContainer'>
                 <h2 id='signupheading'>Become part of the Breakaway crew</h2>
