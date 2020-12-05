@@ -8,9 +8,13 @@ import ApiContext from '../ApiContext'
 
 
 
+
+
 class Dashboard extends React.Component{
 
     static contextType = ApiContext
+
+    activitiesToDisplay = this.context.activities.filter(activity => activity.name == this.context.loggedUser.fullname)
 
     render(){
         return(
@@ -18,7 +22,7 @@ class Dashboard extends React.Component{
                 <DashboardNavBar/>
                 <h2>Activities</h2>
 
-                {this.context.activities.map(activity => (
+                {this.activitiesToDisplay.map(activity => (
                     <Activity name={activity.name}
                               title={activity.title}
                               duration={activity.duration} 

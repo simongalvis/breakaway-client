@@ -17,7 +17,7 @@ require("dotenv").config();
 class App extends React.Component {
   state = {
     activities: [
-      /* {
+      {
       "name":"Trent Richardson",
       "title": "Morning run" , 
       "duration": "27" ,
@@ -26,7 +26,7 @@ class App extends React.Component {
 
   },
   {
-      "name":"Trent Richardson",
+      "name":"John Jenkins",
       "title": "Evening run" , 
       "duration": "30" ,
       "distance": "4",
@@ -40,21 +40,33 @@ class App extends React.Component {
       "distance": "2.7",
       "description": "Really hot outside, would have liked to run some more"
 
-  } */
+  } 
     ],
+
+  users: [
+    {"id":1,"fullname":"Trent Richardson","username":"jappl018","password":"appleseedsrgreat","date_created":"2020-12-05T07:36:37.093Z"},
+  {"id":2,"fullname":"John Jenkins","username":"jjenk018","password":"oldmanjenkins","date_created":"2020-12-05T07:37:02.390Z"},
+  {"id":3,"fullname":"Sara Jacobs","username":"sjaco902","password":"ilike2run","date_created":"2020-12-05T07:37:30.174Z"}
+],
+loggedUser: {"id":1,"fullname":"Trent Richardson","username":"jappl018","password":"appleseedsrgreat","date_created":"2020-12-05T07:36:37.093Z"}
   };
 
-  componentDidMount() {
+  /* componentDidMount() {
     fetch(`https://limitless-earth-13782.herokuapp.com/api/activities`, {
       mode:"no-cors"
     })
-    .then(res => res.json())
-    .then(resJson => console.log(resJson))
+    .then(res => console.log(res.json()))
     .catch(error => alert('Error'))
       
     //console.log('api endpoint: ' + config.API_ENDPOINT)
   }
+ */
 
+ handleAddActivity = (activity) =>{
+   this.setState({
+      activities: [...this.state.activities, activity]
+})
+ }
   renderNavRoutes() {
     return (
       <>
@@ -83,6 +95,9 @@ class App extends React.Component {
   render() {
     const value = {
       activities: this.state.activities,
+      users: this.state.users,
+      loggedUser: this.state.loggedUser,
+      addActivity: this.handleAddActivity
     };
     return (
       <ApiContext.Provider value={value}>
