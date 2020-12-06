@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import '../LoginPage/LoginPage.css';
 import LoginNavBar from '../LoginNavBar/LoginNavBar.js';
 import ApiContext from '../ApiContext';
@@ -45,9 +44,7 @@ if(found){
                 <form onSubmit={this.handleSubmit}>
                     <input  type='text' id='loginUsername' name='loginUsername' placeholder='Username' required/>
                     <input  type='text' id='loginPassword' name='loginPassword' placeholder='Password' required/>
-                    {/* <Link to='/activities'> */}
                         <button type="submit" id='loginbutton'>Log In</button>
-                    {/* </Link> */}
                     
                 </form>
                 </div>

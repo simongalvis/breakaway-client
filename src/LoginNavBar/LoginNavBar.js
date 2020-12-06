@@ -16,7 +16,7 @@ class LoginNavBar extends React.Component{
                     <img src={logo} alt='Blue breakaway logo' id='main-logo'/>
                 </Link>
                 <Link to="/signup-page">
-                    <button class='nav-button' id='signup-button' value='signup'>Sign Up</button>
+                    <button className='nav-button' id='signup-button' value='signup'>Sign Up</button>
                 </Link>
                 
                 

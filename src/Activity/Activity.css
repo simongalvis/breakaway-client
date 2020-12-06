@@ -32,6 +32,12 @@
     margin:1%;
     width:100%;
 }
+#description-section{
+    margin:1%;
+    width:100%;
+    color: rgb(168, 168, 168);
+    font-size:14px;
+}
 p{
     margin-right: 21px;
 }
