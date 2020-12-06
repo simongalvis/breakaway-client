@@ -15,9 +15,9 @@ class NavBar extends React.Component{
                 <Link to='/'>
                     <img src={logo} alt='Blue breakaway logo' id='main-logo'/>
                 </Link>
-                <Link to="/login-page">
+                <a href="/login-page">
                     <button className='nav-button' id='login-button' value='login'>Log In</button>
-                </Link>
+                </a>
                 
                 
             </header>
