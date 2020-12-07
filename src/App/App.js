@@ -43,6 +43,8 @@ class App extends React.Component {
     //console.log('api endpoint: ' + config.API_ENDPOINT)
   }
 
+
+
   handleDatabaseRefresh = () =>{
     Promise.all([
       fetch(`${config.API_ENDPOINT}/users`),
@@ -62,6 +64,8 @@ class App extends React.Component {
         console.error({ error });
       });
   }
+
+  //handleGoToDashboard = () => this.props.hsitory.push('/activities')
 
   handleAddActivity = (activity) => {
     const requestOptions = {
@@ -93,6 +97,32 @@ class App extends React.Component {
         })
       );
   };
+
+  handleLogin = (loginUsername, loginPassword) => {
+     const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({username: loginUsername, password:loginPassword })
+    };
+
+     fetch(`${config.API_ENDPOINT}/users/login`, requestOptions)
+      .then((res) => { if (res.statusText != 'OK') {
+        
+         alert('Username or password are incorrect. Please try again!')
+      }
+      else if (res.statusText == 'OK') {
+        const found = this.state.users.find(user => (user['username'] == loginUsername) ) 
+        
+         //console.log(found)
+         this.setState({loggedUser: found});
+
+        
+      }
+    })
+
+   
+  };
+
   handleSetLoggedUser = (user) => {
 
     this.setState({
@@ -134,7 +164,8 @@ class App extends React.Component {
       addActivity: this.handleAddActivity,
       setLoggedUser: this.handleSetLoggedUser,
       createUser: this.handleCreateUser,
-      refreshDatabase: this.handleDatabaseRefresh
+      refreshDatabase: this.handleDatabaseRefresh,
+      loginUser: this.handleLogin
     };
     return (
       <ApiContext.Provider value={value}>

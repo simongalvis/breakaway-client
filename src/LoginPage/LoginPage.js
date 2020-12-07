@@ -16,7 +16,14 @@ handleSubmit = e =>{
    const  { loginUsername, loginPassword } = e.target;
    //console.log(loginPassword.value + ' ' + loginUsername.value) 
 
-   const found =this.context.users.find(user => (user['username'] == loginUsername.value) && user['password'] == loginPassword.value )
+  this.context.loginUser(loginUsername.value, loginPassword.value )
+   
+  
+   
+       setTimeout( () => {if (Object.keys(this.context.loggedUser).length > 0){
+           this.props.history.push('/activities')}}, 500)
+   
+   /*  const found =this.context.users.find(user => (user['username'] == loginUsername.value) && user['password'] == loginPassword.value )
 
    if(found == undefined){
     alert('Username or password is incorrect. Please try again')
@@ -29,7 +36,7 @@ this.context.setLoggedUser(found);
 
 if(found){
     this.props.history.push('/activities')
-}
+}  */
 
 
 
