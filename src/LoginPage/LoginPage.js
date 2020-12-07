@@ -11,32 +11,18 @@ static contextType = ApiContext;
 
 handleSubmit = e =>{
     e.preventDefault();
-    //console.log('Submit works')
+   
 
-   const  { loginUsername, loginPassword } = e.target;
-   //console.log(loginPassword.value + ' ' + loginUsername.value) 
-
-  this.context.loginUser(loginUsername.value, loginPassword.value )
+const  { loginUsername, loginPassword } = e.target;
+ 
+this.context.loginUser(loginUsername.value, loginPassword.value )
    
   
    
-       setTimeout( () => {if (Object.keys(this.context.loggedUser).length > 0){
+setTimeout( () => {if (Object.keys(this.context.loggedUser).length > 0){
            this.props.history.push('/activities')}}, 500)
    
-   /*  const found =this.context.users.find(user => (user['username'] == loginUsername.value) && user['password'] == loginPassword.value )
-
-   if(found == undefined){
-    alert('Username or password is incorrect. Please try again')
-   }
-//console.log(this.context.users[0]['username'] + 'is or is not equal to ' + loginUsername.value)
-
-//console.log(found)
-
-this.context.setLoggedUser(found);
-
-if(found){
-    this.props.history.push('/activities')
-}  */
+   
 
 
 

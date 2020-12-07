@@ -16,7 +16,7 @@ static contextType = ApiContext;
 
        const  { signupFullname, signupUsername, signupPassword } = e.target;
 
-       //console.log(` signupFullname: ` +signupFullname.value +  `signupUsername: ` + signupUsername.value + `signupPassword: ` + signupPassword.value)
+       
 
 
        const user = {

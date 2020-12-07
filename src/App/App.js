@@ -40,7 +40,7 @@ class App extends React.Component {
         console.error({ error });
       });
 
-    //console.log('api endpoint: ' + config.API_ENDPOINT)
+    
   }
 
 
@@ -65,7 +65,7 @@ class App extends React.Component {
       });
   }
 
-  //handleGoToDashboard = () => this.props.hsitory.push('/activities')
+
 
   handleAddActivity = (activity) => {
     const requestOptions = {

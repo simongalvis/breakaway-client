@@ -9,10 +9,9 @@ static contextType = ApiContext;
 
     handleSubmit = e =>{
         e.preventDefault();
-        //console.log('handleSubmit working')
         const { titleInput, durationInput, distanceInput, descriptionInput } = e.target;
 
-        //console.log(titleInput.value)
+    
        
         const activity = {
             name: this.context.loggedUser['fullname'],
@@ -22,7 +21,7 @@ static contextType = ApiContext;
             distance: distanceInput.value,
             description: descriptionInput.value
         }
-        //console.log(activity)
+        
         
 
         this.context.addActivity(activity)
