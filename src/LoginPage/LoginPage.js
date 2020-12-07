@@ -50,7 +50,7 @@ if(found){
                 <h2 id='loginheading'>Log In</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input  type='text' id='loginUsername' name='loginUsername' placeholder='Username' required/>
-                    <input  type='text' id='loginPassword' name='loginPassword' placeholder='Password' required/>
+                    <input  type='password' id='loginPassword' name='loginPassword' placeholder='Password' required/>
                         <button type="submit" id='loginbutton'>Log In</button>
                     
                 </form>
