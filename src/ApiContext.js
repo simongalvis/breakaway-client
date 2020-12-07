@@ -7,7 +7,8 @@ export default React.createContext({
   addActivity: () => {},
   setLoggedUser: () =>{},
   createUser: () => {},
-  refreshDatabase: () => {}
+  refreshDatabase: () => {},
+  loginUser: () => {}
   
   
   

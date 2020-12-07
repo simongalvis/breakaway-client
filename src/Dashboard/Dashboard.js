@@ -25,7 +25,8 @@ class Dashboard extends React.Component{
                 <h2>Activities</h2>
                 {this.activitiesToDisplay.length > 0 ?
                 this.activitiesToDisplay.map(activity => (
-                    <Activity name={this.user(activity).fullname}
+                    <Activity key={activity.id}
+                              name={this.user(activity).fullname}
                               title={activity.title}
                               duration={activity.duration} 
                               distance={activity.distance}

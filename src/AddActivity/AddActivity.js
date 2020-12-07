@@ -9,10 +9,9 @@ static contextType = ApiContext;
 
     handleSubmit = e =>{
         e.preventDefault();
-        //console.log('handleSubmit working')
         const { titleInput, durationInput, distanceInput, descriptionInput } = e.target;
 
-        //console.log(titleInput.value)
+    
        
         const activity = {
             name: this.context.loggedUser['fullname'],
@@ -22,7 +21,7 @@ static contextType = ApiContext;
             distance: distanceInput.value,
             description: descriptionInput.value
         }
-        //console.log(activity)
+        
         
 
         this.context.addActivity(activity)
@@ -44,9 +43,9 @@ static contextType = ApiContext;
                 <h2 id='loginheading'>Add Activity</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input  type='text' id='titleInput' name='titleInput' placeholder='Title' />
-                    <input  type='text' id='durationInput' name='durationInput' placeholder='Duration' required/>
-                    <input  type='text' id='distanceInput' name='distanceInput' placeholder='Distance' required/>
-                    <input  type='text' id='descriptionInput' name='descriptionInput' placeholder='Description' required/>
+                    <input  type='text' id='durationInput' name='durationInput' placeholder='Duration(minutes)' required/>
+                    <input  type='text' id='distanceInput' name='distanceInput' placeholder='Distance(miles)' required/>
+                    <input  type='text' id='descriptionInput' name='descriptionInput' placeholder='Notes' required/>
                     <button type='submit' id='activity-submit-button'>Submit</button>
                    
                     

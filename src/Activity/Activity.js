@@ -8,7 +8,7 @@ class activity extends React.Component{
 
 
     render(){
-        console.log(this.props.time)
+        //console.log(this.props.date)
         return(
             <div className='Activity'>
                 <div className='activityItem'>
