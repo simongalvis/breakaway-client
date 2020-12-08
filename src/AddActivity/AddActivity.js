@@ -43,9 +43,9 @@ static contextType = ApiContext;
                 <h2 id='loginheading'>Add Activity</h2>
                 <form onSubmit={this.handleSubmit}>
                     <input  type='text' id='titleInput' name='titleInput' placeholder='Title' />
-                    <input  type='text' id='durationInput' name='durationInput' placeholder='Duration(minutes)' required/>
-                    <input  type='text' id='distanceInput' name='distanceInput' placeholder='Distance(miles)' required/>
-                    <input  type='text' id='descriptionInput' name='descriptionInput' placeholder='Notes' required/>
+                    <input  type='number' id='durationInput' name='durationInput' placeholder='Duration(minutes)' required/>
+                    <input  type='number' id='distanceInput' name='distanceInput' placeholder='Distance(miles)' required/>
+                    <input  type='text' id='descriptionInput' name='descriptionInput' placeholder='Notes(Ex: Felt great after the first mile)' required/>
                     <button type='submit' id='activity-submit-button'>Submit</button>
                    
                     
