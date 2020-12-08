@@ -9,14 +9,16 @@
 
 ## Screenshots
 
+- Activities Page<br/>
+![Activities Page](/src/images/sample-hero.jpg)
+
 - Login Page
 ![Login Page](/src/images/breakaway-login.png)
 
 - Add Activity Page
 ![Add Activity Page](/src/images/breakaway-add-activity.png)
 
-- Activities Page
-![Activities Page](/src/images/sample-hero.jpg)
+
 
 ## Built With
 - React
