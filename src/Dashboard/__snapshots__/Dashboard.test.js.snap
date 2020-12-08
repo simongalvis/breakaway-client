@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard component Renders UI as expected 1`] = `
+<div
+  className="Dashboard"
+>
+  <header>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <img
+        alt="Blue breakaway logo"
+        id="main-logo"
+        src="breakaway-logo.png"
+      />
+    </a>
+    <a
+      aria-current={null}
+      href="/new-activity"
+      onClick={[Function]}
+    >
+      <button
+        className="nav-button"
+        id="newactivity-breakaway-button"
+        value="new activity"
+      >
+        <b>
+           +Breakaway!
+        </b>
+          
+      </button>
+    </a>
+  </header>
+  <h2>
+    Activities
+  </h2>
+  <h5>
+    No activities recorded yet! To get started, add your first activity by clicking the blue "Breakaway" button on the top right.
+  </h5>
+</div>
+`;

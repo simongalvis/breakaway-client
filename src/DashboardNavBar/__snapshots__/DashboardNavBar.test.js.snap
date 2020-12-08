@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardNavbBar component Renders UI as expected 1`] = `
+<header>
+  <a
+    aria-current="page"
+    className="active"
+    href="/"
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <img
+      alt="Blue breakaway logo"
+      id="main-logo"
+      src="breakaway-logo.png"
+    />
+  </a>
+  <a
+    aria-current={null}
+    href="/new-activity"
+    onClick={[Function]}
+  >
+    <button
+      className="nav-button"
+      id="newactivity-breakaway-button"
+      value="new activity"
+    >
+      <b>
+         +Breakaway!
+      </b>
+        
+    </button>
+  </a>
+</header>
+`;

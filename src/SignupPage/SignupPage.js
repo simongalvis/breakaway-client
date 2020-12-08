@@ -42,12 +42,12 @@ static contextType = ApiContext;
                 <div className='signupFormContainer'>
                 <h2 id='signupheading'>Become part of the Breakaway crew</h2>
                 <form onSubmit={this.handleSubmit}> 
-                    <label for='signupFullname'><b>Full name:</b></label>
-                    <input  type='text' id='signupFullname' name='signupFullname' placeholder='Full name' autocorrect="off" autocapitalize="none" required/>
-                    <label for='signupUsername'><b>Username:</b></label>
-                    <input  type='text' id='signupUsername' name='signupUsername' placeholder='Username' autocorrect="off" autocapitalize="none" required/>
-                    <label for='signupPassword'><b>Password:</b></label>
-                    <input  type='text' id='signupPassword' name='signupPassword' placeholder='Password' autocorrect="off" autocapitalize="none" required/>
+                    <label htmlFor='signupFullname'><b>Full name:</b></label>
+                    <input  type='text' id='signupFullname' name='signupFullname' placeholder='Full name' autoCorrect="off" autoCapitalize="none" required/>
+                    <label htmlFor='signupUsername'><b>Username:</b></label>
+                    <input  type='text' id='signupUsername' name='signupUsername' placeholder='Username' autoCorrect="off" autoCapitalize="none" required/>
+                    <label htmlFor='signupPassword'><b>Password:</b></label>
+                    <input  type='text' id='signupPassword' name='signupPassword' placeholder='Password' autoCorrect="off" autoCapitalize="none" required/>
                     <button id='signupbutton'><b>Sign Up</b></button>
                     
                     

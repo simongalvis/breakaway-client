@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 import "./App.css";
 import NavBar from "../NavBar/NavBar";
 import LandingPage from "../LandingPage/LandingPage";
@@ -133,7 +133,11 @@ class App extends React.Component {
   renderNavRoutes() {
     return (
       <>
-        <Route exact path="/" component={NavBar} />
+        
+        
+          <Route exact path="/" component={NavBar} />
+          
+        
       </>
     );
   }
@@ -141,16 +145,20 @@ class App extends React.Component {
   renderMainRoutes() {
     return (
       <>
+      
+     
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/signup-page" component={SignupPage} />
         <Route exact path="/login-page" component={LoginPage} />
         <Route exact path="/activities" component={Dashboard} />
         <Route exact path="/new-activity" component={AddActivity} />
-        <Route
+        
+        {/* <Route
           exact
           path="/activities/:activityId"
           component={ExpandedActivity}
-        />
+        /> */}
+      
       </>
     );
   }
@@ -170,10 +178,12 @@ class App extends React.Component {
     return (
       <ApiContext.Provider value={value}>
         <div className="App">
+          <BrowserRouter>
           <nav>{this.renderNavRoutes()}</nav>
 
           <main>{this.renderMainRoutes()}</main>
           <Footer />
+          </BrowserRouter>
         </div>
       </ApiContext.Provider>
     );

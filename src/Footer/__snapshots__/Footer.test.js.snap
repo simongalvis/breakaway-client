@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component Renders UI as expected 1`] = `
+<footer>
+  <p>
+    © - 
+    <a
+      href="http://simongalvis.com/"
+    >
+      simongalvis.com
+    </a>
+  </p>
+</footer>
+`;

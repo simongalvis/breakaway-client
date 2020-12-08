@@ -1,7 +1,6 @@
 import React from 'react';
-import {Route, Link } from 'react-router-dom';
+import {Link, BrowserRouter } from 'react-router-dom';
 import './LandingPage.css';
-import NavBar from '../NavBar/NavBar';
 import sampleHero from '../images/sample-hero.jpg'
 
 class LandingPage extends React.Component{
@@ -19,7 +18,6 @@ class LandingPage extends React.Component{
                     <button id='landingpage-signup-button'><b>Sign Up</b></button>
                 </Link>
                 
-
             </div>
             
         )

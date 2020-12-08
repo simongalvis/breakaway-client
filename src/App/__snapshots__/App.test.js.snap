@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders UI as expected 1`] = `
+<div
+  className="App"
+>
+  <nav>
+    <header>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="Blue breakaway logo"
+          id="main-logo"
+          src="breakaway-logo.png"
+        />
+      </a>
+      <a
+        href="/login-page"
+        onClick={[Function]}
+      >
+        <button
+          className="nav-button"
+          id="login-button"
+          value="login"
+        >
+          Log In
+        </button>
+      </a>
+    </header>
+  </nav>
+  <main>
+    <div
+      className="LandingPage"
+    >
+      <h2
+        className="hero"
+      >
+        The simple way to track your athletic progress
+      </h2>
+      <p
+        id="hero-text"
+      >
+        Breakaway allows you to log your runs, walks, hikes, and other activities in one convenient location
+      </p>
+      <img
+        alt="Breakaway ui on mobile"
+        id="landingpage-ui-image"
+        src="sample-hero.jpg"
+      />
+      <a
+        href="/signup-page"
+        onClick={[Function]}
+      >
+        <button
+          id="landingpage-signup-button"
+        >
+          <b>
+            Sign Up
+          </b>
+        </button>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <p>
+      © - 
+      <a
+        href="http://simongalvis.com/"
+      >
+        simongalvis.com
+      </a>
+    </p>
+  </footer>
+</div>
+`;

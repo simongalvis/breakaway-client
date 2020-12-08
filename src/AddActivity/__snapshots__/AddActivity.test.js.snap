@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddActivity component Renders UI as expected 1`] = `
+<div
+  className="AddActivity"
+>
+  <header>
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      <img
+        alt="Blue breakaway logo"
+        id="main-logo"
+        src="breakaway-logo.png"
+      />
+    </a>
+    <a
+      aria-current={null}
+      href="/new-activity"
+      onClick={[Function]}
+    >
+      <button
+        className="nav-button"
+        id="newactivity-breakaway-button"
+        value="new activity"
+      >
+        <b>
+           +Breakaway!
+        </b>
+          
+      </button>
+    </a>
+  </header>
+  <div
+    className="addActivityFormContainer"
+  >
+    <h2
+      id="loginheading"
+    >
+      Add Activity
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="titleInput"
+      >
+        <b>
+          Title:
+        </b>
+      </label>
+      <input
+        id="titleInput"
+        name="titleInput"
+        placeholder="Title"
+        type="text"
+      />
+      <label
+        htmlFor="durationInput"
+      >
+        <b>
+          Duration:
+        </b>
+         
+      </label>
+      <input
+        id="durationInput"
+        name="durationInput"
+        placeholder="Duration(minutes)"
+        required={true}
+        type="number"
+      />
+      <label
+        htmlFor="distanceInput"
+      >
+        <b>
+          Distance:
+        </b>
+         
+      </label>
+      <input
+        id="distanceInput"
+        name="distanceInput"
+        placeholder="Distance(miles)"
+        required={true}
+        type="number"
+      />
+      <label
+        htmlFor="descriptionInput"
+      >
+        <b>
+          Notes:
+        </b>
+         
+      </label>
+      <input
+        id="descriptionInput"
+        name="descriptionInput"
+        placeholder="Notes(Ex: Felt great after the first mile)"
+        required={true}
+        type="text"
+      />
+      <button
+        id="activity-submit-button"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+`;
