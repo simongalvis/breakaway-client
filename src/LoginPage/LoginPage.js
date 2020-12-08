@@ -35,7 +35,9 @@ setTimeout( () => {if (Object.keys(this.context.loggedUser).length > 0){
                 <div className='loginFormContainer'>
                 <h2 id='loginheading'>Log In</h2>
                 <form onSubmit={this.handleSubmit}>
+                    <label for='loginUserName'><b>Username:</b></label>
                     <input  type='text' id='loginUsername' name='loginUsername' placeholder='Username' autocorrect="off" autocapitalize="none" required/>
+                    <label for='loginPassword'><b>Password:</b></label>
                     <input  type='password' id='loginPassword' name='loginPassword' placeholder='Password' autocorrect="off" autocapitalize="none" required/>
                         <button type="submit" id='loginbutton'>Log In</button>
                     
