@@ -19,8 +19,10 @@ form{
     
 }
 input{
+   
     width:80%;
     margin:3%;
+    margin-top: 0;
     border-radius: 7px;
     border:solid 1px gray;
     height:21px;
@@ -28,6 +30,19 @@ input{
     max-width:700px;
     color:white;
 }
+label{
+    display: block;
+    justify-content: left;
+    text-align: left;
+    width:80%;
+    margin:0;
+    margin-left:9%;
+    border-radius: 7px;
+    height:21px;
+    max-width:700px;
+    color:white;
+}
+
 #signupheading{
     color:white;
     background-color: black;
@@ -42,7 +57,12 @@ input{
     color:white;
     border: 1px solid rgb(41, 41, 41);
 }
-
+/* label{
+    display:block;
+    text-align: left;
+    width:80%;
+    margin:3%;
+} */
 @media screen and (min-width: 500px){
 .signupFormContainer{
     width:454px;
