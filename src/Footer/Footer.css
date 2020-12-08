@@ -1,12 +1,15 @@
 footer{
-    height: 7%;
+   
+    height: 25px;
     background-color: black;
     color: white;
-    padding: 5% 0;
+    padding: 4% 0;
+    
 }
 a{
     color:white
 }
 p{
     margin:0;
+    
 }
