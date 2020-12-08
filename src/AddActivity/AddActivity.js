@@ -39,7 +39,7 @@ static contextType = ApiContext;
             <div className='AddActivity'>
                 <DashboardNavBar/>
                 
-                <div className='loginFormContainer'>
+                <div className='addActivityFormContainer'>
                 <h2 id='loginheading'>Add Activity</h2>
                 <form onSubmit={this.handleSubmit}>
                     <label for='titleInput'><b>Title:</b></label>

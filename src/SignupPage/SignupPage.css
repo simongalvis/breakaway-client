@@ -11,7 +11,7 @@
 .signupFormContainer{
     max-width: 550px;
     align-self: center;
-    margin-top: 10%;
+    margin: 10% 0;
 }
 form{
     align-self: center;
@@ -20,7 +20,7 @@ form{
     text-align:0;
     display: block;
     max-width:500px;
-    background-color: rgba(29, 29, 29, 0.5) ;
+    background-color: rgba(0, 0, 0, 0.7) ;
     
 }
 input{
