@@ -18,6 +18,8 @@
 #landingpage-signup-button{
     margin: 24px 24px;
     width: 290px;
+    height:49px;
+    font-size: 17px;
     border-radius: 33px;
     background-color: rgb(13, 146, 255);
     color: white;

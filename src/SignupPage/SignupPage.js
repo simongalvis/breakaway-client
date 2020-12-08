@@ -48,7 +48,7 @@ static contextType = ApiContext;
                     <input  type='text' id='signupUsername' name='signupUsername' placeholder='Username' autocorrect="off" autocapitalize="none" required/>
                     <label for='signupPassword'><b>Password:</b></label>
                     <input  type='text' id='signupPassword' name='signupPassword' placeholder='Password' autocorrect="off" autocapitalize="none" required/>
-                    <button id='signupbutton'>Sign Up</button>
+                    <button id='signupbutton'><b>Sign Up</b></button>
                     
                     
                 </form>

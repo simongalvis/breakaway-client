@@ -16,7 +16,7 @@ class LandingPage extends React.Component{
                 <p id='hero-text'>Breakaway allows you to log your runs, walks, hikes, and other activities in one convenient location</p>
                 <img src={sampleHero} id="landingpage-ui-image" alt="Breakaway ui on mobile"/>
                 <Link to='/signup-page'>
-                    <button id='landingpage-signup-button'>Sign up</button>
+                    <button id='landingpage-signup-button'><b>Sign Up</b></button>
                 </Link>
                 
 
