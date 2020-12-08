@@ -41,9 +41,9 @@ static contextType = ApiContext;
                 <div className='signupFormContainer'>
                 <h2 id='signupheading'>Become part of the Breakaway crew</h2>
                 <form onSubmit={this.handleSubmit}> 
-                    <input  type='text' id='signupFullname' name='signupFullname' placeholder='Full name' required/>
-                    <input  type='text' id='signupUsername' name='signupUsername' placeholder='Username' required/>
-                    <input  type='text' id='signupPassword' name='signupPassword' placeholder='Password' required/>
+                    <input  type='text' id='signupFullname' name='signupFullname' placeholder='Full name' autocorrect="off" autocapitalize="none" required/>
+                    <input  type='text' id='signupUsername' name='signupUsername' placeholder='Username' autocorrect="off" autocapitalize="none" required/>
+                    <input  type='text' id='signupPassword' name='signupPassword' placeholder='Password' autocorrect="off" autocapitalize="none" required/>
                     <button id='signupbutton'>Sign Up</button>
                     
                     
