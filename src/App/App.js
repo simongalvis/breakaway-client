@@ -178,12 +178,12 @@ class App extends React.Component {
     return (
       <ApiContext.Provider value={value}>
         <div className="App">
-          <BrowserRouter>
+       
           <nav>{this.renderNavRoutes()}</nav>
 
           <main>{this.renderMainRoutes()}</main>
           <Footer />
-          </BrowserRouter>
+          
         </div>
       </ApiContext.Provider>
     );

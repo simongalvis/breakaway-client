@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupPage component Renders UI as expected 1`] = `
+<div
+  className="SignupPage"
+>
+  <header>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Blue breakaway logo"
+        id="main-logo"
+        src="breakaway-logo.png"
+      />
+    </a>
+    <a
+      href="/login-page"
+      onClick={[Function]}
+    >
+      <button
+        className="nav-button"
+        id="login-button"
+        value="login"
+      >
+        Log In
+      </button>
+    </a>
+  </header>
+  <div
+    className="signupFormContainer"
+  >
+    <h2
+      id="signupheading"
+    >
+      Become part of the Breakaway crew
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="signupFullname"
+      >
+        <b>
+          Full name:
+        </b>
+      </label>
+      <input
+        autoCapitalize="none"
+        autoCorrect="off"
+        id="signupFullname"
+        name="signupFullname"
+        placeholder="Full name"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="signupUsername"
+      >
+        <b>
+          Username:
+        </b>
+      </label>
+      <input
+        autoCapitalize="none"
+        autoCorrect="off"
+        id="signupUsername"
+        name="signupUsername"
+        placeholder="Username"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="signupPassword"
+      >
+        <b>
+          Password:
+        </b>
+      </label>
+      <input
+        autoCapitalize="none"
+        autoCorrect="off"
+        id="signupPassword"
+        name="signupPassword"
+        placeholder="Password"
+        required={true}
+        type="text"
+      />
+      <button
+        id="signupbutton"
+      >
+        <b>
+          Sign Up
+        </b>
+      </button>
+    </form>
+  </div>
+</div>
+`;

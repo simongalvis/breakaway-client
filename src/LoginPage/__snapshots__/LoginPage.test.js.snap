@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage component Renders UI as expected 1`] = `
+<div
+  className="LoginPage"
+>
+  <header>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Blue breakaway logo"
+        id="main-logo"
+        src="breakaway-logo.png"
+      />
+    </a>
+    <a
+      href="/signup-page"
+      onClick={[Function]}
+    >
+      <button
+        className="nav-button"
+        id="signup-button"
+        value="signup"
+      >
+        Sign Up
+      </button>
+    </a>
+  </header>
+  <div
+    className="loginFormContainer"
+  >
+    <h2
+      id="loginheading"
+    >
+      Log In
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="loginUserName"
+      >
+        <b>
+          Username:
+        </b>
+      </label>
+      <input
+        autoCapitalize="none"
+        autoCorrect="off"
+        id="loginUsername"
+        name="loginUsername"
+        placeholder="Username"
+        required={true}
+        type="text"
+      />
+      <label
+        htmlFor="loginPassword"
+      >
+        <b>
+          Password:
+        </b>
+      </label>
+      <input
+        autoCapitalize="none"
+        autoCorrect="off"
+        id="loginPassword"
+        name="loginPassword"
+        placeholder="Password"
+        required={true}
+        type="password"
+      />
+      <button
+        id="loginbutton"
+        type="submit"
+      >
+        Log In
+      </button>
+    </form>
+  </div>
+</div>
+`;

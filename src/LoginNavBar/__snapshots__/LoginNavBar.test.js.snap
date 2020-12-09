@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginNavBar component Renders UI as expected 1`] = `
+<header>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="Blue breakaway logo"
+      id="main-logo"
+      src="breakaway-logo.png"
+    />
+  </a>
+  <a
+    href="/signup-page"
+    onClick={[Function]}
+  >
+    <button
+      className="nav-button"
+      id="signup-button"
+      value="signup"
+    >
+      Sign Up
+    </button>
+  </a>
+</header>
+`;
